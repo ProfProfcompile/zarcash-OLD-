@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ZARCASH
+Comment=ZARCASH P2P Cryptocurrency
+Exec=zarcash-qt %u
+Terminal=false
+Type=Application
+Icon=zarcash128
+MimeType=x-scheme-handler/zarcash;
+Categories=Office;Finance;
+Name[en_US]=zarcash-qt.desktop

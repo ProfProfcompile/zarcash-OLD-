@@ -1,0 +1,11 @@
+[Protocol]
+exec=zarcash-qt '%u'
+protocol=zarcash
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

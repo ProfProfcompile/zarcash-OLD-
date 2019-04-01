@@ -1,0 +1,26 @@
+# /etc/conf.d/zarcashd: config file for /etc/init.d/zarcashd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/zarcash/zarcash.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/zarcashd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/zarcashd.pid"
+
+# Where to write zarcashd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/zarcashd"
+
+# User and group to own zarcashd process
+#BITCOIND_USER="zarcash"
+#BITCOIND_GROUP="zarcash"
+
+# Path to zarcashd executable
+#BITCOIND_BIN="/usr/bin/zarcashd"
+
+# Nice value to run zarcashd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
