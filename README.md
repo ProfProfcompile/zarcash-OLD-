@@ -1,1 +1,1 @@
-# zarcash
+# zarcashCOIn
