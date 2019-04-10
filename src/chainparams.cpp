@@ -3,7 +3,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
 // Copyright (c) 2015-2017 The ALQO developers
-// Copyright (c) 2019 The ZARCASH developers
+// Copyright (c) 2018 The ZARCASH developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -73,12 +73,16 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 	(12, uint256("0x000002776b72ccaedc901770079751d0604109af891f7e11b2fcba04a88e9d47"))
 	(13, uint256("0x000000fe8712c00771b420f229d4622055360858bfe4a77676d2b5ca2349ae3b"))
 	(14, uint256("0x000006145c395185b3f55fe864eaf5fcb3913348172708346395792459fb9290"))
-	(100, uint256("0x0000000094be4021e410c3d4e7531cea615752e375a028d6b27152eed9c3c5ab"))
-	(200, uint256("0x0000000004e0220df037665a34fd0020a520bb6b0b6ef5552790c84c04346e74"))
-	(300, uint256("0x00000000000058d5e43efc0f3c40213996d7fe613e70e13c9bb83f70fa6eee41"))
-	(500, uint256("0x00000000000180b3e715071a293488b254981da76091673449fef973063f2538"))
+	(15, uint256("0x00000787555c2658b815524b901c10d5aaa2ece5370383f793e22a45320202ea"))
 	(1000, uint256("0x000000000005b8c4f36ceaeafac53bb847daa232a7a0f7ea9828c8d9cdb3e04f"))
-	(2000, uint256("0x000000000004bf85c0521379afb20e67fee1e3deadc681b6e7e581c649d375cf"));
+	(2000, uint256("0x000000000004bf85c0521379afb20e67fee1e3deadc681b6e7e581c649d375cf"))
+	(3000, uint256("0x000000000001c4f2e8b41e11ec7d0059e28bd1f166f4b7017bbdd31cdde52d7a"))
+	(4000, uint256("0x00000000000b6f576e5a50ae408aa53a2897ad9e212efb63aac777cb034b3eca"))
+	(5000, uint256("0x00000000000147e28a7dc74e5b10ca2439396ddc31adf0ad13c2c632fd0edef7"))
+	(6000, uint256("0x00000000000093c13f82684422508d7d40db4c16755c178edf212f9b394f1bc3"))
+	(7000, uint256("0x0000000000021a7044e06e5cccaca5e4c291ba23f613938dc486b80fbcd4e12d"))
+	(8000, uint256("0x0000000000155d652ea011bfd2d4c98b1f43cb6b3e1410b535c8c3444d41efba"))
+	(8400, uint256("0x00000000000962ea55764ef5a6db6752f8ee89993cab78c48b66afe486a424f8")) ;
 
 
 	
@@ -88,11 +92,11 @@ static const Checkpoints::CCheckpointData data = {
     1553367420, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    0        // * estimated number of transactions per day after checkpoint
+    750        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x000006401f2c8c99028f6ad458d737c48c26b0440c99ca86e3daa4207623b165"));
+    boost::assign::map_list_of(0, uint256("0x0"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1553367419,
@@ -165,7 +169,6 @@ public:
         vSeeds.push_back(CDNSSeedData("seed1.zarbitcoin.net","51.75.162.95"));             // seed 1
         vSeeds.push_back(CDNSSeedData("seed2.zarbitcoin.net","51.75.162.92"));             // seed 2
         vSeeds.push_back(CDNSSeedData("seed3.zarbitcoin.net","51.75.170.189"));             // seed 3
-        vSeeds.push_back(CDNSSeedData("seed4.zarbitcoin.net","160.119.101.57"));             // seed 4
 	vSeeds.push_back(CDNSSeedData("seed5.zarbitcoin.net","51.38.71.12"));             // seed 5
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 80); //Prefix Zarcash Z
