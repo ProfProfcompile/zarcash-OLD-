@@ -94,9 +94,10 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
                 }
                 if (wtx.IsCoinBase()) {
                     // Generated
-                    sub.type = TransactionRecord::Generated;
-                }
+                    sub.type = TransactionRecord::Generated;               
 				
+		
+				}
 				
                 parts.append(sub);
             }
