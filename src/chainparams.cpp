@@ -148,7 +148,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // ZARCASH: 1 day
         nTargetSpacing = 1.5 * 60;  // ZARCASH: 90 Sec Block 
-        nLastPOWBlock = 5000000; //Test longterm effect with trade margin issue with all currencies-LONG LIVE MINERS 
+        nLastPOWBlock = 15200; //Test longterm effect with trade margin issue with all currencies-LONG LIVE MINERS 
         nMaturity = 90; // Maturity to block 
         nMasternodeCountDrift = 20;
 	nMasternodeColleteralLimxDev = 5000000; //Params().MasternodeColleteralLimxDev()  Para
